@@ -1,0 +1,29 @@
+Assignment - Round II | onefinnet
+
+
+It is a small web page that we want you to code and try to make it responsive, 
+along with some functionalities. 
+
+You have to upload your assignment on GitHub and then deploy it and make it live on
+ the web, after that share the URLs by replying to this email or email us at
+ hr@onefinnet.com.
+
+Create a Restaurant Landing Banner and List using React JS / NEXT JS.
+
+
+Key Features Required -
+
+    Users should be able to update the product list by changing the category.
+    Design must be look similar to the screenshot available.
+
+
+Expectations - Responsive design
+
+
+API Docs - Free Meal API | TheMealDB.com {https://www.themealdb.com/api.php}
+
+
+You can use another set of images and logos but try to make it look like the design attached to this email.
+
+
+Please, complete and submit this assignment by Sunday, 23 June 2024, 23:59 (IST) or before.
