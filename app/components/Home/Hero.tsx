@@ -27,11 +27,12 @@ const Hero = () => {
         </div>
 
         <div className="relative flex justify-center items-center bg-priColor w-[45%]  h-full">
-            <Image src={FoodPlate} alt="grocery" width={1920} height={1080} className="absolute top-[55%] translate-y-[-50%] left-[-13em] z-20 w-[48em] drop-shadow-[-3px_2px_1px_rgba(0,0,0,0.7)]"/>
-            <div className="absolute top-[58%] left-[-7em] translate-y-[-50%] z-10 h-[70%] w-[80%] bg-priColor border-[7.6px] border-transparentWhite rounded-full"></div>
+            <Image src={FoodPlate} alt="grocery" width={1920} height={1080} className="absolute top-[55%] translate-y-[-50%] min-[1512px]:left-[-13em] min-[1200px]:left-[-9em] lg:left-[-7em] z-20 w-[48em] drop-shadow-[-3px_2px_1px_rgba(0,0,0,0.7)]"/>
+            <div className="hero-ring"></div>
             <Image src={Leaf} alt="Leaf" height={300} width={100} className="absolute bottom-[10em] left-[65%] z-20 w-[3.4em] rotate-[-65deg]" />
             <Image src={Leaf} alt="Leaf" height={300} width={100} className="absolute bottom-[8em] left-[61%] z-20 w-[2.4em] rotate-[-28deg]" />
         </div>
+
     </section>
   )
 }

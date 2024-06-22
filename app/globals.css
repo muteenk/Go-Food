@@ -11,7 +11,16 @@
 }
 
 @layer components{
-
+  .hero-ring{
+    @apply absolute translate-y-[-50%] z-10 bg-priColor border-[7.6px] border-transparentWhite rounded-full
+    min-[1900px]:top-[60%] min-[1900px]:left-[-7em] min-[1900px]:h-[70%] min-[1900px]:w-[80%]
+    min-[1634px]:top-[62%] min-[1634px]:left-[-7em] min-[1634px]:h-[70%] min-[1634px]:w-[80%]
+    min-[1512px]:top-[58%] min-[1512px]:left-[-7em] min-[1512px]:h-[70%] min-[1512px]:w-[80%]
+    min-[1400px]:top-[60%] min-[1400px]:left-[-5em] min-[1400px]:h-[55%] min-[1400px]:w-[90%]
+    min-[1200px]:top-[57%] min-[1200px]:left-[-6em] min-[1200px]:h-[57%] min-[1200px]:w-[90%]
+    min-[1100px]:top-[57%] min-[1100px]:left-[-4em] min-[1100px]:h-[53%] min-[1100px]:w-[90%]
+    lg:top-[57%] lg:left-[-4em] lg:h-[49%] lg:w-[90%]
+  }
 }
 
 @layer utilities{
