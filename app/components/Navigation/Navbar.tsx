@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className='fixed top-0 left-0 w-screen shadow-[0_20px_50px_-15px_rgba(0,0,0,0.4)] flex justify-between items-center px-6 py-4 lg:px-[5em] lg:py-8 bg-priColor lg:bg-[transparent] lg:shadow-none'>
+    <nav className='fixed top-0 left-0 z-50 w-screen shadow-[0_20px_50px_-15px_rgba(0,0,0,0.4)] flex justify-between items-center px-6 py-4 lg:px-[5em] lg:py-8 bg-priColor lg:bg-[transparent] lg:shadow-none'>
         <div>
             <Link href="/" className='text-[23px] lg:text-[34px] text-[white] lg:text-darkText'>Go <span className='font-semibold'>Food</span></Link>
         </div>
