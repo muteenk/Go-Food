@@ -4,7 +4,9 @@
 
 
 @layer base{
-
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
 }
 
 @layer components{
@@ -12,5 +14,11 @@
 }
 
 @layer utilities{
+  .nav-icon{
+    @apply text-[white] text-[13px] font-semibold bg-transparentWhite hover:bg-transparentWhiteHover mx-2 rounded-full;
+  }
 
+  .notify-badge{
+    @apply absolute top-0 right-0 bg-secColor rounded-full px-[7px] py-[2px] text-priColor font-medium text-[10px];
+  }
 }
