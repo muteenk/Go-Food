@@ -4,9 +4,9 @@ import Leaf from "../../assets/leaf.png"
 
 const Hero = () => {
   return (
-    <section className="flex w-screen h-screen">
+    <section className="flex flex-col min-[915px]:flex-row w-screen min-[915px]:h-screen">
 
-        <div className="flex justify-start items-center w-[60%] h-full">
+        <div className="flex justify-start items-center min-[915px]:w-[60%] h-full">
             <div className="relative flex flex-col justify-start items-start w-[70%] ml-[5em]">
                 <Image src={Leaf} alt="Leaf" height={300} width={100} className="absolute top-[1.5em] right-[15em] z-20 w-[2.5em] rotate-[-120deg]" />
                 <h4 className="text-[25px] text-darkText font-bold">Discount up to 20%</h4>
@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className="relative flex justify-center items-center bg-priColor w-[45%]  h-full">
+        <div className="relative flex justify-center items-center bg-priColor min-[915px]:w-[45%]  h-full">
             <Image src={FoodPlate} alt="grocery" width={1920} height={1080} className="absolute top-[55%] translate-y-[-50%] min-[1512px]:left-[-13em] min-[1200px]:left-[-9em] lg:left-[-7em] z-20 w-[48em] drop-shadow-[-3px_2px_1px_rgba(0,0,0,0.7)]"/>
             <div className="hero-ring"></div>
             <Image src={Leaf} alt="Leaf" height={300} width={100} className="absolute bottom-[10em] left-[66%] z-20 w-[3.4em] rotate-[-65deg]" />

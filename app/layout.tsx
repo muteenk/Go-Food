@@ -28,7 +28,7 @@ export default function RootLayout({
 
 
       </head>
-      <body className="">
+      <body className="!overflow-x-hidden w-screen">
         <Navbar />
         {children}
       </body>
