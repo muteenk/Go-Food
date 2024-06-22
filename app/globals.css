@@ -16,7 +16,7 @@
 
 @layer utilities{
   .nav-icon{
-    @apply text-[white] text-[13px] font-semibold bg-transparentWhite hover:bg-transparentWhiteHover mx-2 rounded-full;
+    @apply text-[white] text-[13px] font-semibold bg-transparentWhite hover:bg-transparentWhiteHover mx-1 rounded-full;
   }
 
   .notify-badge{
