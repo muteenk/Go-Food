@@ -17,12 +17,12 @@ const ToggleSidebar = ({state, setState}: sidebarProps) => {
             </button>
         </header>
         <div className='flex flex-col justify-start items-start'>
-            <Link href="/" className='w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Home</Link>
-            <Link href="/" className='w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Groceries</Link>
-            <Link href="/" className='w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Pages</Link>
-            <Link href="/" className='flex items-center w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Cart <span className="bg-secColor rounded-full px-[7px] py-[2px] text-priColor font-medium text-[10px] mx-4">0</span></Link>
-            <Link href="/" className='flex items-center w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Wishlist  <span className="bg-secColor rounded-full px-[7px] py-[2px] text-priColor font-medium text-[10px] mx-4">2</span></Link>
-            <Link href="/" className='w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Account</Link>
+            <Link href="/" onClick={() => {setState(false)}} className='w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Home</Link>
+            <Link href="/" onClick={() => {setState(false)}} className='w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Groceries</Link>
+            <Link href="/" onClick={() => {setState(false)}} className='w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Pages</Link>
+            <Link href="/" onClick={() => {setState(false)}} className='flex items-center w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Cart <span className="bg-secColor rounded-full px-[7px] py-[2px] text-priColor font-medium text-[10px] mx-4">0</span></Link>
+            <Link href="/" onClick={() => {setState(false)}} className='flex items-center w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Wishlist  <span className="bg-secColor rounded-full px-[7px] py-[2px] text-priColor font-medium text-[10px] mx-4">2</span></Link>
+            <Link href="/" onClick={() => {setState(false)}} className='w-full px-6 py-4 font-semibold text-darkText hover:text-priColor hover:bg-softGray'>Account</Link>
         </div>
     </aside>    
   )
