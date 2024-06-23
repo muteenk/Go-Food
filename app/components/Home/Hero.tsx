@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="flex flex-col min-[915px]:flex-row w-screen lg:mt-0 min-[915px]:h-screen min-[915px]:mt-[2em] mt-[7em]">
 
         {/* Left Section - (White Portion) */}
-        <div className="flex justify-start items-center min-[915px]:w-[60%] h-full min-[915px]:my-0 my-7">
+        <div className="bg-[#f2f1ec] flex justify-start items-center min-[915px]:w-[60%] h-full min-[915px]:my-0 my-7">
             <div className="relative flex flex-col md:justify-start md:items-start justify-center items-center min-[915px]:w-[70%] w-[85%] min-[915px]:ml-[5em] mx-auto min-[1400px]:mt-0 min-[915px]:mt-[5em] md:mt-[3em]">
                 <Image src={Leaf} alt="Leaf" height={300} width={100} className="absolute top-[1.5em] right-[15em] z-20 w-[2.5em] rotate-[-120deg]" />
                 <h4 className="text-[25px] text-darkText font-bold md:text-left text-center">Discount up to 20%</h4>

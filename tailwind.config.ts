@@ -13,7 +13,7 @@ const config: Config = {
       grayText: "#7c7c7a",
       priColor: "#345333",
       secColor: "#f1c74b",
-      softGray: "#dddddd",
+      softGray: "#f2f2ec",
       transparentWhite: "#ffffff31",
       transparentWhiteHover: "#ffffff46",
     },

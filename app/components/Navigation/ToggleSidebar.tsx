@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-interface sidebarProps {
+type sidebarProps = {
     state: boolean,
     setState: React.Dispatch<React.SetStateAction<boolean>>
 }
