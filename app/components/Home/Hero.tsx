@@ -1,6 +1,7 @@
 import Image from "next/image"
 import FoodPlate from "../../assets/foodPlate.png"
 import Leaf from "../../assets/leaf.png"
+import Link from "next/link"
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
                 <h1 className="font-sec text-[2.8em] mt-5 sm:mt-0 sm:text-[3.5em] font-bold text-darkText leading-tight md:text-left text-center">Buy Fresh And Organic Grocery Food</h1>
                 <p className="text-[15px] sm:text-[18px] font-semibold text-[#d8d8d8] my-11  md:text-left text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minus animi veritatis, molestias, id repellendus cumque sed quidem consequuntur!</p>
                 <div className="flex flex-col md:flex-row justify-between items-center w-full  md:flex-wrap">
-                    <button className="group bg-priColor text-[white] font-medium px-[25px] py-[13px] rounded-full mx-3 md:mr-14">SHOP NOW <i className="group-hover:translate-x-2 translate-all duration-500 fa-solid fa-arrow-right text-sm mx-3"></i></button>
+                    <Link href="#foodSection" className="group bg-priColor text-[white] font-medium px-[25px] py-[13px] rounded-full mx-3 md:mr-14">SHOP NOW <i className="group-hover:translate-x-2 translate-all duration-500 fa-solid fa-arrow-right text-sm mx-3"></i></Link>
                     <div className="flex justify-center items-center my-12">
                         <div className="flex flex-col justify-center items-center pr-[3em] sm:pr-[4em] border-r border-r-[#d3d3d3]">
                             <h1 className="font-sec text-darkText text-[1.8em] sm:text-[2.5em] font-bold text-nowrap">35k +</h1>

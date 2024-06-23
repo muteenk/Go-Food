@@ -7,6 +7,8 @@ import FoodCards from "./FoodCards";
 const FoodSection = () => {
     const [category, setCategory] = useState<string>('fruits');
   return (
+    <>
+    <div id="foodSection"></div>
     <section>
         <header className="flex flex-col justify-center items-center mt-12 mb-5 mx-3">
             <h4 className="text-[21px] text-darkText font-bold text-center">Shop by Category</h4>
@@ -15,6 +17,7 @@ const FoodSection = () => {
         <CategorySelector category={category} setCategory={setCategory} />
         <FoodCards category={category} />
     </section>
+    </>
   )
 }
 
