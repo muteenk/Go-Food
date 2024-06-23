@@ -3,8 +3,10 @@ import {useState, useEffect} from 'react'
 import Card from './Card'
 import { FoodItems } from '@/app/lib/interfaces'
 import Spinner from '../Spinner'
-import { error } from 'console'
+import ErrorMessage from '../ErrorMessage'
 
+
+export const revalidate = 30;
 
 const FoodCards = ({category}: {category: string}) => {
 
@@ -12,10 +14,10 @@ const FoodCards = ({category}: {category: string}) => {
         try{
             const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?${options}`, { cache: 'force-cache' })
             const data = await response.json()
-            setFoodItems(data.meals);
+            setFoodItems(data.meals.splice(0, 6));
         }
         catch(err){
-            setErrorMsg("Something went wrong: "+err);
+            setErrorMsg(`${err}`);
         }
     }
 
@@ -63,7 +65,7 @@ const FoodCards = ({category}: {category: string}) => {
                         <Card key={index} foodItem={foodItem} />
                     )
                 })
-            ) : <p>{errorMsg}</p> )
+            ) : <ErrorMessage msg={errorMsg} /> )
         }
     </main>
   )
