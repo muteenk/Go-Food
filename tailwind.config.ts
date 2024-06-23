@@ -14,6 +14,7 @@ const config: Config = {
       priColor: "#345333",
       secColor: "#f1c74b",
       softGray: "#f2f2ec",
+      featherGray: "#e7e7e7",
       transparentWhite: "#ffffff31",
       transparentWhiteHover: "#ffffff46",
     },

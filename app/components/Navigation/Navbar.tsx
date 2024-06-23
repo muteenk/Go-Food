@@ -36,31 +36,49 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:block">
             <ul className="flex justify-center items-center">
-              <li>
+              <li className="group relative">
                 <Link
                   href="/"
                   className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] lg:text-darkText mx-4"
                 >
-                  Home <i className="fa-solid fa-chevron-down text-sm mx-1"></i>
+                  Home <i className="group-hover:rotate-[-90deg] transition-all duration-300 fa-solid fa-chevron-down text-sm mx-1"></i>
                 </Link>
+                <div className="group-hover:flex hover:flex hidden flex-col absolute w-[11em] shadow-md pt-2">
+                  <Link href="#hero" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Banner</Link>
+                  <Link href="#foodSection" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Shop by Category</Link>
+                </div>
               </li>
-              <li>
+              <li className="group relative">
                 <Link
                   href="/"
                   className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] lg:text-darkText mx-4"
                 >
                   Groceries{" "}
-                  <i className="fa-solid fa-chevron-down text-sm mx-1"></i>
+                  <i className="group-hover:rotate-[-90deg] transition-all duration-300 fa-solid fa-chevron-down text-sm mx-1"></i>
                 </Link>
+                <div className="group-hover:flex hover:flex hidden flex-col absolute w-[11em] shadow-md pt-2">
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Fruits</Link>
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Vegetables</Link>
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Meat</Link>
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Bakery</Link>
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Beverages</Link>
+                  
+                </div>
               </li>
-              <li>
+              <li className="group relative">
                 <Link
                   href="/"
                   className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] lg:text-darkText mx-4"
                 >
                   Pages{" "}
-                  <i className="fa-solid fa-chevron-down text-sm mx-1"></i>
+                  <i className="group-hover:rotate-[-90deg] transition-all duration-300 fa-solid fa-chevron-down text-sm mx-1"></i>
                 </Link>
+                <div className="group-hover:flex hover:flex hidden flex-col absolute w-[11em] shadow-md pt-2">
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Home</Link>
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">About</Link>
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Contact</Link>
+                  <Link href="/" className="px-3 py-4 hover:text-priColor bg-[white] hover:bg-featherGray w-full">Shop</Link>
+                </div>
               </li>
             </ul>
           </div>
