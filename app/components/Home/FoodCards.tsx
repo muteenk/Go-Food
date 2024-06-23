@@ -56,7 +56,7 @@ const FoodCards = ({category}: {category: string}) => {
     
 
   return (
-    <main className='flex justify-center items-center flex-wrap w-screen mx-4 my-8'>
+    <main className='flex justify-center items-center flex-wrap w-screen my-8'>
         { 
             (!errorMsg ? (
                 foodItems.length === 0 ? <Spinner/> :
