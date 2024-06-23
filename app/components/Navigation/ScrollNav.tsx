@@ -3,7 +3,7 @@ import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 
 const ScrollNav = () => {
   return (
-    <nav className="fixed top-0 left-0 z-50 w-screen shadow-[0_20px_50px_-15px_rgba(0,0,0,0.4)] hidden lg:flex justify-between items-center lg:px-3 min-[1420px]:px-[5em] px-6 py-3 bg-priColor">
+    <nav className="fixed top-0 left-0 z-50 w-screen shadow-[0_20px_50px_-15px_rgba(0,0,0,0.4)] hidden lg:flex justify-between items-center lg:px-3 min-[1420px]:px-[5em] px-6 py-3 bg-priColor animate-fadeIn">
         <div className="flex justify-between items-center w-[55%]">
           <div className="lg:ml-5">
             <Link

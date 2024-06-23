@@ -24,6 +24,7 @@ const config: Config = {
     animation: {
       rotate: "rotate 1s linear infinite",
       slideLeft: "slideLeft 1s ease-in-out forwards",
+      fadeIn: "fadeIn 0.5s ease-in-out forwards",
     },
     keyframes: {
       rotate: {
@@ -39,6 +40,10 @@ const config: Config = {
           transform: "translateX(0%)",
           opacity: "1"
          },
+      },
+      fadeIn: {
+        "0%": { opacity: "0" },
+        "100%": { opacity: "1" },
       },
     }
   },
