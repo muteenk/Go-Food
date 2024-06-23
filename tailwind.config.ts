@@ -25,7 +25,9 @@ const config: Config = {
     animation: {
       rotate: "rotate 1s linear infinite",
       slideLeft: "slideLeft 1s ease-in-out forwards",
+      slideUp: "slideUp 1s ease-in-out forwards",
       fadeIn: "fadeIn 0.5s ease-in-out forwards",
+      leafAnimation: "leafAnimation 1s ease-in-out forwards",
     },
     keyframes: {
       rotate: {
@@ -42,9 +44,36 @@ const config: Config = {
           opacity: "1"
          },
       },
+      slideUp: {
+        "0%": { 
+          transform: "translateY(-90%)",
+          opacity: "0"
+         },
+        "100%": { 
+          transform: "translateY(-50%)",
+          opacity: "1"
+         },
+      },
       fadeIn: {
         "0%": { opacity: "0" },
         "100%": { opacity: "1" },
+      },
+      leafAnimation: {
+        "0%": { 
+          transform: "rotate(-120deg)",
+          top: "0.5em",
+          right: "14em"
+        },
+        "50%": {
+          transform: "rotate(-90deg)",
+          top: "0.9em",
+          right: "16.5em"
+        },
+        "100%": { 
+          transform: "rotate(-120deg)",
+          top: "1.5em",
+          right: "15em"
+        },
       },
     }
   },
