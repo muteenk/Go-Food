@@ -30,7 +30,7 @@ export default function RootLayout({
       <link rel="icon" href="/favicon.ico" sizes="any" />
 
       </head>
-      <body className="!overflow-x-hidden w-screen">
+      <body className="!overflow-x-hidden w-screen hideScrollbar">
         <Navbar />
         {children}
         <Footer />
