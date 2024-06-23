@@ -13,7 +13,7 @@ const FoodSection = () => {
             <h1 className="font-sec text-[2.3em] sm:text-[2.5em] md:text-[3.2em] my-2 font-bold text-darkText leading-tight text-center">Top Category of Organic Food</h1>
         </header>
         <CategorySelector category={category} setCategory={setCategory} />
-        <FoodCards />
+        <FoodCards category={category} />
     </section>
   )
 }
