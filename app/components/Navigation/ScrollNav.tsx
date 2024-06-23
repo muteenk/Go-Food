@@ -1,35 +1,14 @@
-"use client";
-import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
-import ToggleSidebar from "./ToggleSidebar";
-import ScrollNav from "./ScrollNav";
 
-const Navbar = () => {
-  const [sidebarState, setSidebarState] = useState<boolean>(false);
-  const [scrollVal, setScrollVal] = useState<number>(0);
-
-  // Scroll Event Listener
-  const handleScroll = useCallback(() => {
-    setScrollVal(window.scrollY);
-    console.log(scrollVal + " " + window.scrollY);
-  }, []);
-  
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+const ScrollNav = () => {
   return (
-    <>
-      <nav className="lg:absolute fixed top-0 left-0 z-50 w-screen shadow-[0_20px_50px_-15px_rgba(0,0,0,0.4)] flex justify-between items-center lg:px-3 min-[1420px]:px-[5em] px-6 py-4 lg:py-8 bg-priColor lg:bg-[transparent] lg:shadow-none">
+    <nav className="fixed top-0 left-0 z-50 w-screen shadow-[0_20px_50px_-15px_rgba(0,0,0,0.4)] hidden lg:flex justify-between items-center lg:px-3 min-[1420px]:px-[5em] px-6 py-3 bg-priColor">
         <div className="flex justify-between items-center w-[55%]">
           <div className="lg:ml-5">
             <Link
               href="/"
-              className="text-[23px] lg:text-[34px] text-[white] lg:text-darkText"
+              className="text-[23px] text-[white]"
             >
               GO <span className="font-semibold">FOOD</span>
             </Link>
@@ -39,7 +18,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] lg:text-darkText mx-4"
+                  className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] mx-4"
                 >
                   Home <i className="fa-solid fa-chevron-down text-sm mx-1"></i>
                 </Link>
@@ -47,7 +26,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] lg:text-darkText mx-4"
+                  className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] mx-4"
                 >
                   Groceries{" "}
                   <i className="fa-solid fa-chevron-down text-sm mx-1"></i>
@@ -56,7 +35,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] lg:text-darkText mx-4"
+                  className="flex justify-center items-center text-[14px] lg:text-[15px] font-semibold text-[white] mx-4"
                 >
                   Pages{" "}
                   <i className="fa-solid fa-chevron-down text-sm mx-1"></i>
@@ -90,23 +69,10 @@ const Navbar = () => {
               <ShoppingBagOutlinedIcon className="text-[16px]  font-semibold" />
               <span className="notify-badge">0</span>
             </button>
-            <button
-              onClick={() => {
-                setSidebarState(true);
-              }}
-              className="lg:hidden nav-icon px-[15px] py-[12px] mx-2 rounded-full"
-            >
-              <i className="fa-solid fa-bars-staggered"></i>
-            </button>
           </div>
         </div>
       </nav>
-      <div className={scrollVal < 200 ? "hidden" : "block" }>
-        <ScrollNav />
-      </div>
-      <ToggleSidebar state={sidebarState} setState={setSidebarState} />
-    </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default ScrollNav
